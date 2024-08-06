@@ -59,7 +59,7 @@ export default {
   <div class="background-container">
     <div class="overlay"></div>
     <div class="content">
-      <img class="logo" src="/src/assets/yns_logo.png" />
+      <img class="logo" src="/src/assets/logo.png" />
       <div class="text">
         <h1>Your Next Show</h1>
         <p>Connecting Artists, Promoters, and Venues for Unforgettable Live Events.</p>
@@ -212,7 +212,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 header {
@@ -223,7 +223,8 @@ header {
 
 .logo {
   display: block;
-  max-width: 300px;
+  max-width: 200px;
+  /* padding-top: 30px; */
 }
 
 @media (min-width: 1024px) {
@@ -245,6 +246,40 @@ header {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .content {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #mc_embed_signup .button {
+    width: 100%;
   }
 }
 </style>
